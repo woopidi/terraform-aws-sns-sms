@@ -3,5 +3,5 @@ variable "topic_name" {
 }
 
 variable "subscribers" {
-    type = object()
+    type = map
 }
