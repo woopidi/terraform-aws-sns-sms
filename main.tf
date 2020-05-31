@@ -15,7 +15,7 @@ resource "aws_sns_topic_policy" "policy" {
 }
 
 data "aws_iam_policy_document" "document" {
-  policy_id = var.var.topic_name
+  policy_id = var.topic_name
 
   statement {
     actions = [
@@ -41,7 +41,7 @@ data "aws_iam_policy_document" "document" {
       aws_sns_topic.topic.arn,
     ]
 
-    sid = var.var.topic_name
+    sid = var.topic_name
   }
 }
 
