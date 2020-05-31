@@ -1,7 +1,7 @@
-variable "domain_name" {
+variable "topic_name" {
 
 }
 
-variable "zone_id" {
-
+variable "subscribers" {
+    type = object
 }
